@@ -10,7 +10,7 @@ Please Run `train.py` or `run.sh` in each folder.
 The code for sample selection will be uploaded soon.
 
 Model Structure:
-![alt text](./images/image.png)
+![alt text](https://github.com/FanSmale/SSAL/blob/main/image.png)
 This is Our SSAL framework. In the deep training phase, two linear classifiers are trained simultaneously to classify the image rotation degree and the ground truth labels, whilst optimizing the representation learner. In the AL phase, three key values are primarily calculated for the representation of each sample: the classification uncertainty measurement, i.e., Entropy, the local density $\gamma$, and the minimum distance $\delta$. The sample information $I_{umf}$ (Eq. (7)) is measured by fusing these values. To maintain class balance, the samples are grouped by category and sorted in descending order based on the information. Next, the theoretical optimal number of samples to be queried for each category is determined. Both stages are interdependent iterative processes. 
 
 
